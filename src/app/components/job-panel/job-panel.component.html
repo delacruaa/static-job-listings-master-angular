@@ -1,0 +1,31 @@
+<div [@fadeIn] class="job__panel">
+   <div class="job__offer">
+        <img [src]="'/assets' + job.logo.substring(6)" alt="images" />
+        <div class="wrapper">
+            <div class="company__name">
+                <p class="company__text">{{job.company}}</p>
+                <div *ngIf="job.new" class="new">
+                    <p class="new__text">NEW!</p>
+                </div>
+                <div *ngIf="job.featured" class="featured">
+                <p class="featured__text">FEATURED</p>
+                </div>
+            </div>
+            <p class="title">
+              {{job.position}}
+            </p>
+            <div class="info">
+                <p class="info__text">{{job.postedAt}}</p>
+                <p class="info__text">{{job.contract}}</p>
+                <p class="info__text">{{job.location}}</p>
+            </div>
+        </div>
+   </div>
+   <div class="tags" > 
+        <div class="tag" *ngFor="let lang of tools" (click)="pushFilterArr(lang)">
+            <p class="text" >
+          {{lang}}
+            </p>
+        </div>
+   </div>
+</div>

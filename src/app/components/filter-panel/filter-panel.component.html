@@ -1,0 +1,14 @@
+<div  [@fadeIn]  class="filter__panel" *ngIf="langs.length!==0">
+    <div  [@fadeIn] class="filter__items" *ngFor="let lang of langs">
+        <p class="text" >
+         {{lang}}
+        </p>
+         <button class="close" (click)="deleteLang(lang)">
+            <img src="/assets/icon-remove.svg" alt="icon" />
+        </button>
+    </div>
+    
+    <button class="clear__button" (click)="removeAll()" >
+        Clear
+    </button>
+</div>

@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: hsl(180, 29%, 50%);
+  --light-cyan1: hsl(180, 52%, 96%);
+  --light-cyan2: hsl(180, 31%, 95%);
+  --dark-cyan:hsl(180, 8%, 52%);
+  --very-dark-cyan: hsl(180, 14%, 20%);
+  --white: #ffffff;
+
+  --shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 500;
+  background-color: var(--light-cyan1);
+}
+
+
+
+.spinner {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.error {
+  font-size: 35px;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 700;
+}
